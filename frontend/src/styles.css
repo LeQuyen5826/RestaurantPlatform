@@ -1,0 +1,25 @@
+:root { --accent:#c2410c; --bg:#faf7f2; --card:#fff; --line:#e7e0d5; --ok:#15803d; --bad:#b91c1c; font-family: system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:#1c1917; }
+.container { max-width: 980px; margin: 0 auto; padding: 16px; }
+.nav { display:flex; gap:16px; align-items:center; padding:12px 16px; background:var(--card); border-bottom:1px solid var(--line); flex-wrap:wrap; }
+.nav a { color:#1c1917; text-decoration:none; font-weight:600; }
+.spacer { flex:1; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; margin:10px 0; }
+.row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:10px; }
+button, .btn { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:8px 14px; font-size:15px; cursor:pointer; }
+button.secondary { background:#fff; color:var(--accent); border:1px solid var(--accent); }
+button.link { background:none; color:#1c1917; padding:0; text-decoration:underline; }
+button:disabled { opacity:.45; cursor:not-allowed; }
+input, select, textarea { padding:8px; border:1px solid var(--line); border-radius:8px; font-size:15px; }
+label { display:block; margin:8px 0 4px; font-weight:600; }
+.muted { color:#78716c; } .error { color:var(--bad); } .ok { color:var(--ok); }
+.badge { display:inline-block; padding:2px 8px; border-radius:99px; font-size:12px; background:#f5f5f4; border:1px solid var(--line); }
+.badge.warn { background:#fee2e2; color:var(--bad); border-color:#fecaca; font-weight:700; }
+.slots button { margin:4px; }
+.slots button.secondary:disabled { text-decoration:line-through; }
+.cols { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; align-items:start; }
+.kitchen .card.alert { border:2px solid var(--bad); }
+table { width:100%; border-collapse:collapse; } td, th { padding:6px; border-bottom:1px solid var(--line); text-align:left; }
+.tabs { display:flex; gap:8px; margin-bottom:8px; flex-wrap:wrap; }
