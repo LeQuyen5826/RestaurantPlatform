@@ -10,7 +10,7 @@ pipeline {
   }
   triggers { githubPush() }            // GitHub webhook -> /github-webhook/
   environment {
-    DEPLOY_ROOT = 'C:\\wwwroot\\booking'
+    DEPLOY_ROOT = 'D:\\wwwroot\\booking'
     VITE_BASE   = '/booking/'          // frontend chạy dưới http://localhost/booking
     SITE_URL    = 'http://localhost/booking'
     PYTHONUTF8  = '1'
